@@ -1,0 +1,61 @@
+/* Estilo para el cuerpo de la página */
+body {
+  background-color: #101010; /* Color de fondo oscuro para la página */
+  color: #090f11; /* Color del texto, en un tono muy oscuro para contraste */
+  font: oblique bold 120% cursive; /* Fuente en cursiva, negrita y con tamaño del 120% */
+  display: flex; /* Usamos flexbox para alinear elementos de forma flexible */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  height: 100%; /* Ocupa toda la altura del contenedor */
+  margin: 0; /* Elimina los márgenes predeterminados del navegador */
+  padding: 0; /* Elimina el padding predeterminado del navegador */
+}
+
+/* Estilo para el contenedor principal */
+.container {
+  width: 100%; /* Ancho completo del contenedor */
+  padding: 1%; /* Espacio interno del contenedor, 1% del ancho total */
+  box-sizing: border-box; /* Incluye padding y border en el ancho total del elemento */
+}
+
+/* Estilo para el contenedor de las tarjetas */
+.cards-container {
+  display: flex; /* Utiliza flexbox para organizar las tarjetas */
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en nuevas filas si no caben en una sola */
+  justify-content: space-between; /* Espacia las tarjetas equitativamente */
+  gap: 2.5%; /* Espacio entre las tarjetas */
+}
+
+/* Estilo para cada tarjeta individual */
+.card {
+  background-color: #368586; /* Color de fondo de la tarjeta */
+  color: #090f11; /* Color del texto en la tarjeta */
+  border: 2px solid #090f11; /* Borde de 2 píxeles de grosor, con el mismo color que el texto */
+  border-radius: 10px; /* Bordes redondeados para un estilo más suave */
+  font: oblique bold 120% cursive; /* Fuente en cursiva, negrita y con tamaño del 120% */
+  flex: 1 1 calc(33.333% - 20px); /* Permite que las tarjetas ocupen aproximadamente un tercio del ancho, ajustando por el margen */
+  box-sizing: border-box; /* Incluye padding y border en el ancho total del elemento */
+  margin-bottom: 20px; /* Espacio debajo de cada tarjeta */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para los efectos al pasar el mouse */
+}
+
+/* Efectos al pasar el mouse sobre la tarjeta */
+.card:hover {
+  transform: scale(1.05); /* Escala la tarjeta un 5% más grande */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Añade una sombra sutil para dar un efecto de profundidad */
+}
+
+/* Estilo para el encabezado de la tarjeta */
+.card-header {
+  background-color: #368586; /* Color de fondo del encabezado, igual al de la tarjeta */
+  color: #090f11; /* Color del texto en el encabezado */
+  font: oblique bold 110% cursive; /* Fuente en cursiva, negrita y con tamaño del 110% */
+}
+
+/* Estilo para los elementos de la lista */
+.list-group-item {
+  background-color: #aeb9a0; /* Color de fondo para los elementos de la lista */
+  color: #090f11; /* Color del texto en los elementos de la lista */
+  font: oblique bold 80% cursive; /* Fuente en cursiva, negrita y con tamaño del 80% */
+}
+

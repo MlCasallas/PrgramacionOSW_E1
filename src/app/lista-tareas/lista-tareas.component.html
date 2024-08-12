@@ -1,0 +1,30 @@
+<!-- Contenedor principal de la página -->
+<div class="container">
+  <!-- Título principal de la sección -->
+  <h2>Lista de tareas:</h2>
+
+  <!-- Contenedor que organiza las tarjetas de tareas en un diseño flexible -->
+  <div class="cards-container">
+    <!-- Itera sobre la lista de tareas, creando una tarjeta para cada tarea -->
+    <div *ngFor="let tarea of listaTareas; let i = index" class="card">
+      <!-- Encabezado de la tarjeta que muestra el índice de la tarea -->
+      <div class="card-header">Tarea {{ i }}</div>
+
+      <!-- Lista de detalles de la tarea dentro de la tarjeta -->
+      <ul class="list-group list-group-flush">
+        <!-- Elemento de la lista que muestra el ID de usuario -->
+        <li class="list-group-item">
+          <span><b>Id de usuario:</b> {{ tarea.id }}</span>
+        </li>
+        <!-- Elemento de la lista que muestra el ID de tarea -->
+        <li class="list-group-item">
+          <span><b>Id de tarea:</b>{{ tarea.userId }}</span>
+        </li>
+        <!-- Elemento de la lista que muestra la descripción de la tarea -->
+        <li class="list-group-item">
+          <span><b>Descripción:</b> {{ tarea.title }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
